@@ -41,10 +41,13 @@ export default function PrivacyPage() {
 
           <h2>Information we collect</h2>
           <p>
-            We collect the information you choose to submit through our contact
-            and dealer-inquiry form — typically your name, business name, email
-            address, phone number, location, inquiry type, and message. We do
-            not sell this information.
+            This website does not collect personal information through any form
+            — there is no contact or inquiry form, and we do not run an
+            email-sending service. The only way to reach us through this site is
+            to use the email and phone links on the Contact page, which open your
+            own mail or phone app. If you choose to email or call us, we will
+            have whatever information you decide to share in that message or
+            call.
           </p>
           <p>
             Our hosting and infrastructure providers may automatically log basic
@@ -55,33 +58,33 @@ export default function PrivacyPage() {
 
           <h2>How we use your information</h2>
           <ul>
-            <li>To respond to your inquiry and provide dealer or product information.</li>
-            <li>To send pricing and follow-up communications you have requested.</li>
-            <li>To protect the website against spam and abuse.</li>
+            <li>To respond to you if you email or call us directly.</li>
+            <li>To provide dealer or product information you ask for.</li>
+            <li>To operate, secure, and maintain the website.</li>
           </ul>
 
           <h2>How we share information</h2>
           <p>
-            If you use the optional contact form, your submission is delivered to
-            our inbox through a third-party form-forwarding service (Web3Forms),
-            solely so we can receive and respond to your message. We may disclose
-            information if required by law.
+            We do not sell your information. We rely on service providers to host
+            the website and embed the map (Google), but we do not transmit any
+            contact-form data to third parties, because the site collects none.
+            We may disclose information if required by law.
           </p>
 
           <h2>Data retention</h2>
           <p>
-            We keep inquiry information for as long as needed to respond and to
-            maintain ordinary business records, then delete or anonymize it.
+            If you email or call us, we keep that correspondence for as long as
+            needed to respond and to maintain ordinary business records.
           </p>
 
           <h2>Your choices</h2>
           <p>
-            You may ask us to access, correct, or delete the information you have
-            submitted by contacting us at{" "}
+            You may ask us to delete correspondence you have sent us by
+            contacting us at{" "}
             <a href={`mailto:${contact.email}`} className="link">
               {contact.email}
             </a>
-            . You can opt out of follow-up communications at any time.
+            .
           </p>
 
           <h2>Children&apos;s privacy</h2>

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { site } from "@/content/site";
 import { SectionHeading } from "@/components/ui";
-import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact / Become a Dealer",
@@ -59,31 +58,20 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Optional convenience form + map */}
+      {/* Map */}
       <section className="section" style={{ paddingTop: 0 }}>
-        <div className="container-page contact-layout">
-          <div className="contact-layout__form">
-            <h2 className="contact-form__heading">Or send a message</h2>
-            <p className="contact-form__intro">
-              Prefer to type it out? Fill this in and it lands in our inbox — no
-              account needed. The email and phone above work just as well.
-            </p>
-            <ContactForm />
+        <div className="container-page">
+          <div className="contact-map card">
+            <iframe
+              title={`Map of ${site.legalName} in ${contact.city}, ${contact.state}`}
+              src={`https://www.google.com/maps?q=${mapQuery}&output=embed`}
+              width="100%"
+              height="360"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              style={{ border: 0, display: "block" }}
+            />
           </div>
-
-          <aside className="contact-layout__aside" aria-label="Location">
-            <div className="contact-map card">
-              <iframe
-                title={`Map of ${site.legalName} in ${contact.city}, ${contact.state}`}
-                src={`https://www.google.com/maps?q=${mapQuery}&output=embed`}
-                width="100%"
-                height="320"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                style={{ border: 0, display: "block" }}
-              />
-            </div>
-          </aside>
         </div>
       </section>
     </>

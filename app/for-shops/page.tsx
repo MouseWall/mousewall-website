@@ -92,9 +92,9 @@ export default function ForShopsPage() {
           <div className="callout">
             <h2 className="callout__title">Wholesale pricing, shared privately</h2>
             <p>
-              We do not publish wholesale cost or dealer margins. Request dealer
-              terms through the form and we will follow up directly with
-              pricing and how to get started.
+              We do not publish wholesale cost or dealer margins. Reach out by
+              email or phone and we will follow up directly with pricing and how
+              to get started.
             </p>
           </div>
         </div>

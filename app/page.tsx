@@ -7,7 +7,7 @@ import { SectionHeading, Disclaimer } from "@/components/ui";
 const wants = [
   {
     title: "Food",
-    body: "Crumbs, pet kibble, and a forgotten snack are an open invitation. Mice will move in to be near it.",
+    body: "Crumbs, pet kibble, and a forgotten snack are an open invitation. Mice will move in to be near them.",
   },
   {
     title: "Warmth & shelter",

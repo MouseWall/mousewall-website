@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { site } from "@/content/site";
 import { LocalBusinessJsonLd } from "@/components/JsonLd";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -63,6 +64,7 @@ export default function RootLayout({
         <main id="main">{children}</main>
         <Footer />
         <LocalBusinessJsonLd />
+        <ScrollReveal />
       </body>
     </html>
   );

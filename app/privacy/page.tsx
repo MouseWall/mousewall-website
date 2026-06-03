@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/ui";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How Mouse Wall LLC collects and uses information submitted through this website.",
+    "Mouse Wall LLC's privacy policy. This marketing site has no contact form and collects no personal information submitted through it.",
   alternates: { canonical: "/privacy" },
   robots: { index: true, follow: true },
 };

@@ -15,6 +15,7 @@ export const stages = [
       "Peppermint and eucalyptus oils plus proprietary natural ingredients. Human-safe and used inside the vehicle. Mice find the scent unwelcome and look for somewhere else to settle.",
     use: "Inside the vehicle",
     scents: ["Peppermint", "Eucalyptus", "Proprietary natural blend"],
+    addon: null,
   },
   {
     number: 2,
@@ -25,6 +26,7 @@ export const stages = [
       "Peppermint, eucalyptus, and camphor, plus a proprietary real-predator scent. It is suspended in a water-soluble oil that clings to metal, so weather eventually washes it off. Plan to renew it roughly every six months. External use only.",
     use: "Outside the vehicle only",
     scents: ["Peppermint", "Eucalyptus", "Camphor", "Real-predator scent"],
+    addon: null,
   },
   {
     number: 3,
@@ -35,6 +37,12 @@ export const stages = [
       "Mice are drawn to the smell of other mice. Ozone treatment breaks that trail. It requires an overnight stay at the shop while the treatment runs and clears.",
     use: "In-shop, overnight",
     scents: [],
+    addon: {
+      label: "Optional add-on",
+      title: "Waterproof wheel-lip treatment",
+      body:
+        "While the vehicle is on the lift, we can work a mink-essence-infused petroleum jelly into the inside lip of each wheel. The petroleum jelly makes the treatment waterproof and long-lasting — it holds up through rain and snow for roughly six months, conveniently the same interval as a routine oil change, so it renews on the next visit.",
+    },
   },
   {
     number: 4,
@@ -45,6 +53,7 @@ export const stages = [
       "For tough or recurring problems, we screen the openings mice use to get in. It is heavier service — roughly four hours of labor — and it closes the door behind everything the sprays discourage.",
     use: "Heavier in-shop service",
     scents: [],
+    addon: null,
   },
 ] as const;
 

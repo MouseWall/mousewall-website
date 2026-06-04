@@ -49,6 +49,17 @@ export default function HowItWorksPage() {
                       ))}
                     </ul>
                   ) : null}
+                  {stage.addon ? (
+                    <div className="stages__addon">
+                      <span className="stages__addon-label">
+                        {stage.addon.label}
+                      </span>
+                      <h3 className="stages__addon-title">
+                        {stage.addon.title}
+                      </h3>
+                      <p>{stage.addon.body}</p>
+                    </div>
+                  ) : null}
                 </article>
               </li>
             ))}

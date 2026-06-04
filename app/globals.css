@@ -932,30 +932,6 @@
     border-radius: 999px;
     padding: 0.3rem 0.75rem;
   }
-  /* Optional add-on block within a stage card */
-  .stages__addon {
-    margin-top: 1.25rem;
-    padding: 1rem 1.2rem;
-    border: 1px dashed var(--color-line);
-    border-radius: var(--radius-lg);
-    background-color: var(--color-surface);
-  }
-  .stages__addon-label {
-    display: inline-block;
-    font-size: var(--text-xs);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--color-primary);
-    margin-bottom: 0.4rem;
-  }
-  .stages__addon-title {
-    font-size: var(--text-lg);
-    margin-bottom: 0.3rem;
-  }
-  .stages__addon p {
-    color: var(--color-slate);
-  }
 
   /* ---------- Callout ---------- */
   .callout {

@@ -1116,6 +1116,11 @@
     font-size: var(--text-sm);
     color: var(--color-slate-400);
   }
+  .pricing-card__buy {
+    margin-top: 1.25rem;
+    /* Reserve room so cards don't jump when the Shopify button loads in. */
+    min-height: 44px;
+  }
   .pricing-disclaimer {
     margin-top: 2rem;
     max-width: 46rem;

@@ -49,6 +49,37 @@ export const stages = [
 ] as const;
 
 /**
+ * Products sold directly in the Mouse Wall online store (Shopify).
+ * Prices should match the Shopify listing — update both together.
+ */
+export const shopProducts = [
+  {
+    name: "Mousewall Protection Pack",
+    shopifyId: "9213896032387",
+    price: "$39.95",
+    blurb:
+      "The layered defense kit: Mouse Wall gel for the inside lip of each wheel plus spray for the wheels and underhood areas — a full season of protection.",
+    note: "Available in Mouse, Squirrel, Rat, and Rodent blends.",
+  },
+  {
+    name: "Extra Strength Mouse Wall 3-pack",
+    shopifyId: "9235917799555",
+    price: "$49.50",
+    blurb:
+      "For vehicles already encroached by mice — a stronger concentration of both peppermint oil and predator essence.",
+    note: "Three bottles, ready to apply.",
+  },
+  {
+    name: "Motorhome / Camper truck-sized protection",
+    shopifyId: "9235928481923",
+    price: "$68.35",
+    blurb:
+      "RVs sit unused for much of the year, and they all smell like food to a hungry rodent. Our strongest blend in a larger size — enough to re-dose two to three times a season.",
+    note: "Sized for motorhomes, campers, and trucks.",
+  },
+] as const;
+
+/**
  * Suggested retail pricing — public. Wholesale numbers are shared privately
  * with dealers and never appear here.
  */

@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { pricing } from "@/content/product";
+import { pricing, shopProducts } from "@/content/product";
 import { SectionHeading } from "@/components/ui";
+import ShopifyBuyButton from "@/components/ShopifyBuyButton";
 
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Suggested retail pricing for Mouse Wall — from the over-the-counter 3-pack to professional application, ozone treatment, and copper screening. Prices vary by shop.",
+    "Suggested retail pricing for Mouse Wall — from the over-the-counter 3-pack to professional application, ozone treatment, and copper screening. Or buy Mouse Wall online, shipped to your door.",
   alternates: { canonical: "/pricing" },
 };
 
@@ -52,6 +53,33 @@ export default function PricingPage() {
             shop. Drivers: ask your service advisor to apply Mouse Wall at your
             next visit — most shops can add it during a routine oil change.
           </p>
+        </div>
+      </section>
+
+      {/* Buy online — direct sales via Shopify */}
+      <section className="section surface" id="buy">
+        <div className="container-page">
+          <SectionHeading
+            eyebrow="Buy online"
+            title="Order direct from Mouse Wall"
+            lead="Over-the-counter products shipped to your door. Checkout is handled securely by Shopify."
+          />
+          <div className="pricing-grid">
+            {shopProducts.map((item) => (
+              <article key={item.name} className="card pricing-card">
+                <h2 className="pricing-card__name">{item.name}</h2>
+                <p className="pricing-card__price">
+                  <span className="pricing-card__amount">{item.price}</span>
+                  <span className="pricing-card__cadence">shipped</span>
+                </p>
+                <p className="pricing-card__blurb">{item.blurb}</p>
+                <p className="pricing-card__note">{item.note}</p>
+                <div className="pricing-card__buy">
+                  <ShopifyBuyButton productId={item.shopifyId} />
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
